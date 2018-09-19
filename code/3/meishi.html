@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>美食</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style type="text/css">body,select,textarea {font-size:1.1em}body, html,input{font-family:"微软雅黑";}</style>
+    <style>
+
+        #logo,#search{
+            padding: 30px 0;
+        }
+        #input{margin-right: -4px;
+        }
+        .head-left{
+            float: left;
+        }
+        .head-right{
+            float: right;
+        }
+        header{
+            border-bottom: solid 1px dimgray;
+        }
+        .act{
+            border-bottom: solid 2px green;
+        }
+        .form{
+            margin-top: 50px;
+        }
+        .breadcrumb{
+            background-color: #fff;
+            border-bottom: 1px solid #d7d7d7;
+        }
+        .icon-bow{
+            display: block;
+            width: 32px;
+            height: 21px;
+            background: #fff url(img/hudie.jpg) no-repeat 50% 50%;
+            margin: 0 auto;
+            margin-top: -30px;
+            padding:  0 10px;
+        }
+        /* dibu/*/
+        #bottom{
+            background-color: #00a5e3 ;
+            color: wheat;
+        }
+        .semicircle{
+            background:url(img/bolang.png) repeat-x;
+            padding: 20px 0;
+        }
+        #bottom h3{
+            font-size: 18px;
+            color: wheat;
+            background: url(img/h.jpg) repeat-x 0 50%;
+        }
+        #bottom h3 span{
+            padding-right: 10px;
+        }
+        .dashed-v{
+            background: url(img/v.jpg) repeat-y 100% 5px;
+            padding: 0 20px 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="head-left">
+                    <a href="#" title="回到首页">
+                        <img id="logo" src="img/logo.png">
+                    </a>
+                </div>
+                <div class="head-right">
+                    <form class="navbar-form navbar-left form" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                    </div>
+                </div>
+
+                </div>
+
+                <ul class="nav nav-pills">
+                    <li role="presentation"><a href="../home.html">主页</a></li>
+                    <li role="presentation"class="act"><a href="#">美食</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            更多美食<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">古典法国菜派系（Classic Cuisine/Haute Cuisine）</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">家常法国菜派系（Bourgeoise Cuisine）</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">新派法国菜派系（Nouvelle Cuisine）</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container"style="margin-top: 20px">
+        <div class="row">
+            <div class="col-lg-6">
+                        <div class="thumbnail" style="padding-bottom: 30px">
+                            <img  src="img/fanqie.png" alt="food">
+                            <div class="caption">
+                                <strong>番茄全餐</strong>
+                                <div>
+                                    <a class="thumbnail head-left">
+                                        <img class="img-circle" src="img/t.jpg"
+                                             data-toggle="tooltip"
+                                             data-placement="left" title="free">
+                                    </a>
+                                    <p class="head-left">2013-01-02 阿维尼翁</p>
+                                    <button type="button" class="btn btn-default head-right">
+                                        <span class="glyphicon glyphicon-align-left" ></span>
+                                    </button>
+                                    <button type="button" class="btn btn-default head-right" title="美食"
+                                            data-container="body" data-toggle="popover" data-placement="top"
+                                            data-trigger="hover" data-content="番茄全餐">
+                                        <span class="glyphicon glyphicon-align-left" ></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="thumbnail" style="padding-bottom: 30px">
+                    <img  src="img/fagun.jpg" alt="food">
+                    <div class="caption">
+                        <strong>牛肉芝士法式长棍</strong>
+                        <div>
+                            <a class="thumbnail head-left">
+                                <img src="img/t.jpg"class="img-circle"
+                                     data-toggle="tooltip"
+                                     data-placement="left" title="free">
+                            </a>
+                            <p class="head-left">2013-01-02 阿维尼翁</p>
+                            <button type="button" class="btn btn-default head-right">
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                            <button type="button" class="btn btn-default head-right" title="美食"
+                                    data-container="body" data-toggle="popover" data-placement="top"
+                                    data-content="牛肉芝士法式长棍"data-trigger="hover" >
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            <div class="col-lg-6">
+                <div class="thumbnail" style="padding-bottom: 30px">
+                    <img src="img/3beiji.jpg" alt="food">
+                    <div class="caption">
+                        <strong>法国郎酒三杯鸡</strong>
+                        <div>
+                            <a class="thumbnail head-left">
+                                <img src="img/t.jpg"class="img-circle"
+                                     data-toggle="tooltip"
+                                     data-placement="left" title="free">
+                            </a>
+                            <p class="head-left">2013-01-02 阿维尼翁</p>
+                            <button type="button" class="btn btn-default head-right">
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                            <button type="button" class="btn btn-default head-right" title="美食"
+                                    data-container="body" data-toggle="popover" data-placement="top"
+                                    data-content="法国郎酒三杯鸡"data-trigger="hover" >
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="thumbnail" style="padding-bottom: 30px">
+                    <img src="img/hongjiudunji.jpg" alt="food">
+                    <div class="caption">
+                        <strong>法国红酒炖鸡</strong>
+                        <div>
+                            <a class="thumbnail head-left">
+                                <img src="img/t.jpg"class="img-circle"
+                                     data-toggle="tooltip"
+                                     data-placement="left" title="free">
+                            </a>
+                            <p class="head-left">2013-01-02 阿维尼翁</p>
+                            <button type="button" class="btn btn-default head-right">
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                            <button type="button" class="btn btn-default head-right" title="美食"
+                                    data-container="body" data-toggle="popover" data-placement="top"
+                                    data-content="法国红酒炖鸡"data-trigger="hover" >
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="thumbnail" style="padding-bottom: 30px">
+                    <img src="img/xiangjian.jpg" alt="food">
+                    <div class="caption">
+                        <strong>香煎西冷配法国蘑菇汁</strong>
+                        <div>
+                            <a class="thumbnail head-left">
+                                <img src="img/t.jpg"class="img-circle"
+                                     data-toggle="tooltip"
+                                     data-placement="left" title="free">
+                            </a>
+                            <p class="head-left">2013-01-02 阿维尼翁</p>
+                            <button type="button" class="btn btn-default head-right">
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                            <button type="button" class="btn btn-default head-right" title="美食"
+                                    data-container="body" data-toggle="popover" data-placement="top"
+                                    data-content="香煎西冷配法国蘑菇汁"data-trigger="hover" >
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="thumbnail" style="padding-bottom: 30px">
+                    <img src="img/dancai.jpg" alt="food">
+                    <div class="caption">
+                        <strong>法式淡菜</strong>
+                        <div>
+                            <a class="thumbnail head-left">
+                                <img src="img/t.jpg"class="img-circle"
+                                     data-toggle="tooltip"
+                                     data-placement="left" title="free">
+                            </a>
+                            <p class="head-left">2013-01-02 阿维尼翁</p>
+                            <button type="button" class="btn btn-default head-right">
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                            <button type="button" class="btn btn-default head-right" title="美食"
+                                    data-container="body" data-toggle="popover" data-placement="top"
+                                    data-content="法式淡菜"data-trigger="hover" >
+                                <span class="glyphicon glyphicon-align-left" ></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pager">
+                <li class="previous disabled"><a href="#">&larr; Older</a></li>
+                <li class="next"><a href="#">Newer &rarr;</a></li>
+            </ul>
+            <ol class="breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li class="active">美食</li>
+            </ol>
+            <i class="icon-bow"></i>
+
+        </div>
+
+    </div>
+
+    </div>
+    <aside id="bottom">
+        <div class="semicircle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <section>
+                            <div class="dashed-v">
+                            <h3><button class="btn btn-info">Christian Etienne</button></h3>
+
+                            <p>在[教皇宫]附近的Christian Etienne餐厅，
+                                米其林一星，最具盛名的是他的蕃茄全餐，
+                                每一道都采用了蕃茄，以前晚上都有，但是
+                                近期不一定都能吃到；推荐这里平日里(周一
+                                到周五)的午餐，套餐价格合适...</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-4">
+                        <section>
+                            <div class="dashed-v">
+                                <h3><button class="btn btn-info">阿维尼翁教皇宫餐厅</button></h3>
+                                <p>这家餐厅位于阿维尼翁教皇宫广场和共
+                                    和国大道交接的地方，地理位置特别好
+                                    ，最适合参观完教皇宫后来用餐。价格
+                                    亲民，菜品分量十足，在当地很受欢迎。
+                                    餐厅以普罗旺斯的特色菜为主......           </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-4">
+                        <section>
+                            <div class="dashed-v">
+                                <h3><button class="btn btn-info">Restaurant L'Essentiel</button></h3>
+                                <p>在[阿维尼翁]时钟广场广场附近的L'Essentiel ，
+                                    在古老的建筑里采用了时尚的现代装饰风格，
+                                    其中有个很惬意的小庭院，大厨师出自名家，
+                                    也获得米其林推荐，擅长普罗旺斯风味的法国
+                                    料理。</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <ol class="breadcrumb text-center">
+            <li><copyright>201658234041<em>@</em>胡瑞</copyright></li>
+            <a href="#" class="pull-right">回到顶部</a>
+        </ol>
+    </footer>
+    <script>
+        $(function (){
+            $("[data-toggle='popover']").popover();
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
+</body>
+</html>

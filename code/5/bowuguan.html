@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博物馆</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        body{
+            font-family: "Microsoft Yahei",sans-serif;
+            color: #666;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        /**/
+        #myCarousel{
+            margin: 50px 0 0 0;
+        }
+        #navbar-collapse ul{
+            margin-top: 0;
+        }
+        .carousel-inner img{
+            margin: 0 auto;
+        }
+        /*tab1*/
+        .tab-h2{
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: #0059b2;
+        }
+        .tab-p{
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: #999;
+        }
+        .tab1{
+            margin: 30px 0;
+            color: #666;
+            text-align: center;
+        }
+        .tab1 .media-heading{
+            margin: 5px 0 8px 0;
+        }
+        .tab1 .text-muted{
+            color: #999;
+            text-decoration: line-through;
+        }
+        .tab1 .col{
+            padding: 20px;
+        }
+        @media (min-width: 768px) {
+            .tab-h2{
+                font-size: 26px;
+            }
+            .tab-p{
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 992px) {
+            .tab-h2{
+                font-size: 28px;
+            }
+            .tab-p{
+                font-size: 17px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .tab-h2{
+                font-size: 30px;
+            }
+            .tab-p{
+                font-size: 18px;
+            }
+        }
+        /*tab2*/
+        .tab2{
+            background-color: #eee;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .tab3{
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .tab2 img{
+            width: 60%;
+            height: 60%;
+        }
+        .tab3 img{
+            width: 65%;
+            height: 65%;
+        }
+        /*footer*/
+        #footer{
+            background-color: #666;
+            color: #eee;
+            border-top: 1px solid;
+            padding: 20px;
+            text-align: center;
+        }
+        /*jumbotron*/
+        .jumbotron{
+            background-color: #000;
+            margin: 50px 0 0 0;
+            color: #ccc;
+        }
+        .jumbotron h1{
+            font-size: 26px;
+            padding:  0 0 0 20px;
+        }
+        .jumbotron h4{
+            font-size: 16px;
+            padding:  0 0 0 20px;
+        }
+        /*infomation*/
+        .infomation{
+            background-color: #eee;
+        }
+        .info-content{
+            background-color: #fff;
+            margin: 10px 0 10px 0;
+            box-shadow: 2px 2px 3px #ccc ;
+        }
+        .info-content img{
+            margin: 12px 0;
+        }
+        .info-content h1{
+            color: #333;
+            padding:2px 0 0 0;
+        }
+        .info-content p{
+            line-height: 1.6;
+        }
+        .info-right{
+            background-color: #fff;
+            box-shadow: 2px 2px 3px #ccc;
+        }
+        .info-right blockquote{
+            margin: 0;
+            padding: 0;
+        }
+        .info-right h2{
+            font-size: 20px;
+            color: #333;
+            padding: 5px;
+        }
+        .info-right h4{
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"style="padding: 0px"><img src="img/logo.png" width="60px"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../home.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+                <li class="active"><a href="bowuguan.html"><span class="glyphicon glyphicon-list"></span>博物馆</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-fire"></span>美食</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>关于</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-md-3"><hgroup>
+            <h1>博物馆</h1>
+            <h4>阿维尼翁的著名博物馆...</h4>
+        </hgroup>
+        </div>
+        <div class="col-md-9" style="height: 100px" id="particles-js"></div>
+
+    </div>
+</div>
+<div class="infomation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <div class="row info-content">
+                        <div class="col-md-5 col-sm-5 col-xs-5">
+                            <img src="img/angladon.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7">
+                            <h4>安哥拉东博物馆</h4>
+                            <p>安格拉东博物馆(Musee Angladon)收藏有普罗旺斯地区唯一的一件凡高画作《铁路车厢》(Les Wagons de Chemin de Fer)，你可以看到画中的土地并没有上色。同样这里还有毕加索、塞尚、莫奈和德加等名家的作品。</p>
+                            <p>admin 15 /10 /11</p>
+                        </div>
+                    </div>
+                    <div class="row info-content" >
+                        <div class="col-md-5 col-sm-5 col-xs-5">
+                            <img src="img/xiaogong.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7">
+                            <h4>阿维尼翁小宫博物馆</h4>
+                            <p>博物馆开放于1976年，收藏了许多阿维尼翁学派以及意大利文艺复兴时期的绘画作品，展示了从中世纪到文艺复兴时期的艺术历程。其中最有名的是300幅意大利文艺复兴时的绘画，有名家Botticelli、Carpaccio、Giovanni Di Paolo等人的作品。</p>
+                            <p>admin 15 /10 /11</p>
+                        </div>
+                    </div>
+                    <div class="row info-content">
+                        <div class="col-md-5 col-sm-5 col-xs-5">
+                            <img src="img/luyiwulang.jpg" class="img-responsive" width="225px">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7">
+                            <h4>路易.武朗博物馆</h4>
+                            <p>博物馆坐落在一栋迷人的私人宅第内，拥有17和18世纪具有代表性的装饰艺术丰富藏品：巴黎的家具，来自南部地区、穆斯捷(Moustiers)、马赛(Marseille)的彩陶，金银制品、挂毯、绘画以及新收藏的19世纪普罗旺斯及阿维尼翁的画家作品。</p>
+                            <p>admin 15 /10 /11</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 info-right" style="margin-top: 10px">
+                <blockquote>热门资讯</blockquote>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-5"style="padding:12px 0;margin: 0">
+                            <img src="img/angladon.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7"style="padding-right: 0">
+                            <h4>安哥拉东博物馆</h4>
+                            <p>admin 15 /10 /11</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-5"style="padding:12px 0;margin: 0">
+                            <img src="img/xiaogong.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7"style="padding-right: 0">
+                            <h4>阿维尼翁小宫博物馆</h4>
+                            <p>admin 15 /10 /11</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-5"style="padding:12px 0;margin: 0">
+                            <img src="img/luyiwulang.jpg" class="img-responsive" width="225px">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7"style="padding-right: 0">
+                            <h4>路易.武朗博物馆</h4>
+                            <p>admin 15 /10 /11</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" class="text-muted">
+    <div class="container">
+        <p>企业培训 | 合作事宜 | 版权投诉</p>
+        <p>201658234041&copy;胡瑞</p>
+    </div>
+</footer>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    $(function(){
+        //轮播自动播放
+        $('#myCarousel').carousel({
+            interval:2000,
+        });
+        //设置垂直居中
+        $('.carousel-control').css('line-height',$('.carousel-inner img').height()+'px');
+        $(window).resize(function(){
+            var $height=$('.carousel-inner img').eq(0).height()||
+                    $('.carousel-inner img').eq(1).height()||
+                    $('.carousel-inner img').eq(2).height()||
+                    $('.carousel-control').css('line-height',$('.carousel-inner img').height()+'px');
+
+        });
+        $('.text').eq(0).css('margin-top',($('.text').eq(0).height())/2+'px');
+
+        $('.text').eq(1).css('margin-top',($('.text').eq(1).height())/2+'px');
+    });
+</script>
+<script>
+    $(function () {
+        $('.nav').singlePageNav({
+            offset:70
+        });
+        $('.navbar-collapse').click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        new WOW().init();
+    })
+</script>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+</script>
+</body>
+</html>

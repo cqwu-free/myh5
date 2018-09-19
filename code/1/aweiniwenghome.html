@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阿维尼翁</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default" role="navigation" style="height: 10px;height: 10px">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">阿维尼翁</a>
+        </div>
+        <div>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+
+                <button type="button" class="btn btn-default">登录</button>
+            </form>
+            <img src="img/logo.png" style="float: right;margin-right: 100px">
+        </div>
+    </div>
+    <div >
+        <ul class="nav row navbar-default ul">
+            <li class="col-lg-2"><a href="../home.html"><span class=" glyphicon glyphicon glyphicon-home"></span>首页</a></li>
+            <li class="col-lg-2"><a href="#"><span class=" glyphicon 	glyphicon glyphicon-tree-conifer"></span>景点</a></li>
+            <li class="col-lg-2"><a href="#"><span class=" glyphicon glyphicon glyphicon-cutlery"></span>美食</a></li>
+            <li class="col-lg-2"><a href="#"><span class="glyphicon glyphicon glyphicon-shopping-cart"></span>购物</a></li>
+            <li class="col-lg-2"><a href="#"><span class="glyphicon glyphicon-heart"></span>活动</a></li>
+            <li class="col-lg-2"><a href="#"><span class=" glyphicon 	glyphicon glyphicon-user"></span>个人</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <!--轮播与新闻-->
+    <div class="row jianju">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/qiao.png" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="img/chui.png" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="img/lake.png" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#home1" data-toggle="tab">阿维尼翁</a></li>
+                <li><a href="#home2" data-toggle="tab">跟团旅行</a></li>
+                <li><a href="#home3" data-toggle="tab">自驾出行</a></li>
+                <li><a href="#home4" data-toggle="tab">最新活动</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="home1">
+                    <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                        <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                        <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                        <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                        <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                        <li><a href="#">七年艺术征途：“中国日”再次亮相阿维尼翁戏剧节</a><span style="float: right">2017-07-14</span></li><br>
+                        <li><a href="#">5部中国作品将亮相法国阿维尼翁戏剧节</a><span style="float: right">2016-07-07</span></li><br>
+                        <li><a href="#">阿维尼翁戏剧节特约作品 《少女、魔鬼和磨坊》周末莅穗(图)</a><span style="float: right">2016-05-17</span></li><br>
+                        <li><a href="#">驻法国大使翟隽出席阿维尼翁戏剧节</a><span style="float: right">2015-07-08</span></li><br>
+                        <li><a href="#">前沿与平民:中国戏剧人眼中的法国阿维尼翁戏剧节</a><span style="float: right">2014-11-27</span></li><br>
+                    </ul>
+                </div>
+
+                <div class="tab-pane fade" id="home2">
+                    <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                        <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                        <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                        <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                        <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                        <li><a href="#">七年艺术征途：“中国日”再次亮相阿维尼翁戏剧节</a><span style="float: right">2017-07-14</span></li><br>
+                        <li><a href="#">5部中国作品将亮相法国阿维尼翁戏剧节</a><span style="float: right">2016-07-07</span></li><br>
+                        <li><a href="#">阿维尼翁戏剧节特约作品 《少女、魔鬼和磨坊》周末莅穗(图)</a><span style="float: right">2016-05-17</span></li><br>
+                        <li><a href="#">驻法国大使翟隽出席阿维尼翁戏剧节</a><span style="float: right">2015-07-08</span></li><br>
+                        <li><a href="#">前沿与平民:中国戏剧人眼中的法国阿维尼翁戏剧节</a><span style="float: right">2014-11-27</span></li><br>
+                    </ul>
+                </div>
+
+                <div class="tab-pane fade" id="home3">
+                    <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                        <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                        <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                        <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                        <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                        <li><a href="#">七年艺术征途：“中国日”再次亮相阿维尼翁戏剧节</a><span style="float: right">2017-07-14</span></li><br>
+                        <li><a href="#">5部中国作品将亮相法国阿维尼翁戏剧节</a><span style="float: right">2016-07-07</span></li><br>
+                        <li><a href="#">阿维尼翁戏剧节特约作品 《少女、魔鬼和磨坊》周末莅穗(图)</a><span style="float: right">2016-05-17</span></li><br>
+                        <li><a href="#">驻法国大使翟隽出席阿维尼翁戏剧节</a><span style="float: right">2015-07-08</span></li><br>
+                        <li><a href="#">前沿与平民:中国戏剧人眼中的法国阿维尼翁戏剧节</a><span style="float: right">2014-11-27</span></li><br>
+                    </ul>
+                </div>
+
+                <div class="tab-pane fade" id="home4">
+                    <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                        <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                        <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                        <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                        <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                        <li><a href="#">七年艺术征途：“中国日”再次亮相阿维尼翁戏剧节</a><span style="float: right">2017-07-14</span></li><br>
+                        <li><a href="#">5部中国作品将亮相法国阿维尼翁戏剧节</a><span style="float: right">2016-07-07</span></li><br>
+                        <li><a href="#">阿维尼翁戏剧节特约作品 《少女、魔鬼和磨坊》周末莅穗(图)</a><span style="float: right">2016-05-17</span></li><br>
+                        <li><a href="#">驻法国大使翟隽出席阿维尼翁戏剧节</a><span style="float: right">2015-07-08</span></li><br>
+                        <li><a href="#">前沿与平民:中国戏剧人眼中的法国阿维尼翁戏剧节</a><span style="float: right">2014-11-27</span></li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--缩略图-->
+    <div class="contents">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="img/wall1.png"
+                         alt="通用的占位符缩略图">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="img/pope.jpg"
+                         alt="通用的占位符缩略图">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="img/senqiao.jpg"
+                         alt="通用的占位符缩略图">
+                   </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="img/senmu.jpg"
+                         alt="通用的占位符缩略图">
+                    </div>
+            </div>
+        </div>
+        <!--信息公开-->
+        <div style="height: 250px;">
+            <div>
+                <div class="col-lg-2" id="gdzx" style="background-color: #4b5f7c;text-align: center;color: white">更多资讯</div>
+                <div class="col-lg-10" id="gdzx"></div>
+                <br> <br>
+            </div>
+            <div>
+                <div class="col-lg-2" >
+                    <ul class="nav nav-pills nav-stacked" style="text-align: center">
+                        <li style="border: 1px solid #637998;font-size: 16px"><a href="#"><span class="glyphicon glyphicon glyphicon-tree-conifer"></span>景点</a></li>
+                        <li style="border: 1px solid #637998;font-size: 16px"><a href="#"><span class="glyphicon 	glyphicon glyphicon-cutlery"></span>美食</a></li>
+                        <li style="border: 1px solid #637998;font-size: 16px"><a href="#"><span class="glyphicon glyphicon glyphicon-shopping-cart"></span>购物</a></li>
+                        <li style="border: 1px solid #637998;font-size: 16px"><a href="#"><span class="glyphicon 	glyphicon glyphicon-heart"></span>活动</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" >
+                    <ul id="myTab2" class="nav nav-tabs">
+                        <li class="active"><a href="#home1_1" data-toggle="tab">当地资讯</a></li>
+                        <li><a href="#home2_2" data-toggle="tab">法国资讯</a></li>
+                        <li><a href="#home3_3" data-toggle="tab">国际咨询</a></li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="home1_1">
+                            <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                                <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                                <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                                <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                                <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="home2_2">
+                            <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                                <li><a href="#">5部中国作品将亮相法国阿维尼翁戏剧节</a><span style="float: right">2016-07-07</span></li><br>
+                                <li><a href="#">阿维尼翁戏剧节特约作品 《少女、魔鬼和磨坊》周末莅穗(图)</a><span style="float: right">2016-05-17</span></li><br>
+                                <li><a href="#">驻法国大使翟隽出席阿维尼翁戏剧节</a><span style="float: right">2015-07-08</span></li><br>
+                                <li><a href="#">前沿与平民:中国戏剧人眼中的法国阿维尼翁戏剧节</a><span style="float: right">2014-11-27</span></li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="home3_3">
+                            <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                                <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                                <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                                <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                                <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/wall1.png"
+                                     alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <p>阿维尼翁城墙</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/pope.jpg"
+                                     alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <p>Pope's Palace</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/senqiao.jpg"
+                                     alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <p>圣贝内泽桥</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 250px;">
+            <div>
+                <div class="col-lg-2" id="gdfx" style="background-color: #4b5f7c;text-align: center;color: white">新闻</div>
+                <div class="col-lg-10" id="gdfx"></div>
+                <br> <br>
+            </div>
+            <div>
+                <div class="col-lg-2" >
+                    <img src="../img/petite.png" style="width:100%">
+                    <a href="#"><p style="text-align: center">更多美食</p></a>
+                </div>
+                <div class="col-lg-6" >
+                    <ul id="myTab3" class="nav nav-tabs">
+                        <li class="active"><a href="#home1_1_1" data-toggle="tab">当地分享</a></li>
+                        <li><a href="#home2_2_2" data-toggle="tab">法国分享</a></li>
+                        <li><a href="#home3_3_3" data-toggle="tab">国际分享</a></li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="home1_1_1">
+                            <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                                <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                                <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                                <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                                <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="home2_2_2">
+                            <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                                <li><a href="#">5部中国作品将亮相法国阿维尼翁戏剧节</a><span style="float: right">2016-07-07</span></li><br>
+                                <li><a href="#">阿维尼翁戏剧节特约作品 《少女、魔鬼和磨坊》周末莅穗(图)</a><span style="float: right">2016-05-17</span></li><br>
+                                <li><a href="#">驻法国大使翟隽出席阿维尼翁戏剧节</a><span style="float: right">2015-07-08</span></li><br>
+                                <li><a href="#">前沿与平民:中国戏剧人眼中的法国阿维尼翁戏剧节</a><span style="float: right">2014-11-27</span></li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="home3_3_3">
+                            <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                                <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                                <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                                <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                                <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/jinyujia.png"
+                                     alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <p>金玉家</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/christian.png"
+                                     alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <p>Christian Etienne</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="img/popedinner.png"
+                                     alt="通用的占位符缩略图">
+                                <div class="caption">
+                                    <p>阿维尼翁教皇宫餐厅</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 250px;">
+            <div>
+                <div class="col-lg-2" id="wyfx" style="background-color: #4b5f7c;text-align: center;color: white">网友分享</div>
+                <div class="col-lg-10" id="wyfx"></div>
+                <br> <br>
+            </div>
+            <div class="col-lg-2" >
+                <ul class="nav nav-pills nav-stacked" style="text-align: center">
+                    <li style="border: 1px solid #637998;font-size: 16px"><a href="#"><img src="img/txwb.jpg">腾讯微博</a></li>
+                    <li style="border: 1px solid #637998;font-size: 16px"><a href="#"><img src="img/sina.jpg">新浪微博</a></li>
+                    <li style="border: 1px solid #637998;font-size: 16px"><a href="#"><img src="img/f.jpg">Facebook</a></li>
+                    <li style="border: 1px solid #637998;font-size: 16px"><a href="#"><img src="img/t.jpg">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="col-lg-2" style="background-color: #cccccc;color: black"><a href="#">所有分享</a></div>
+                <div class="col-lg-10"style="border-bottom: 2px solid #637998;height: 20px"></div><br><br>
+                <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                    <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                    <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                    <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                    <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-lg-2" style="background-color: #cccccc;color: black"><a href="#">我的</a></div>
+                <div class="col-lg-10"style="border-bottom: 2px solid #637998;height: 20px"></div><br><br>
+                <ul style="list-style: circle;font-size: 12px;color: black"><br>
+                    <li><a href="#">邀请你与2017年阿维尼翁戏剧节「剧王」《西贡》面对面 | 时髦观</a><span style="float: right">2018-04-09</span></li><br>
+                    <li><a href="#">法国阿维尼翁：普罗旺斯心脏</a><span style="float: right">2018-02-11</span></li><br>
+                    <li><a href="#">在南法遇到梵高的阳光</a><span style="float: right">2018-01-18</span></li><br>
+                    <li><a href="#">中国形体戏剧《水生》在阿维尼翁上演</a><span style="float: right">2017-07-23</span></li><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <ol class="breadcrumb">
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li class="active">Copyright:201658234041胡瑞</li>
+    </ol>
+</footer>
+</body>
+<script>
+    $('#myTab a').hover(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+    $('#myTab2 a').hover(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+    $('#myTab3 a').hover(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+</script>
+</html>

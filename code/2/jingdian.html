@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>景点</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <link href="css/pg_one.css" rel="stylesheet">
+</head>
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../home.html">首页</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">综述</a></li>
+                <li><a href="#summary-container">简述</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">特点 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab">阿维尼翁</a></li>
+                        <li><a href="#feature-tab">圣贝内泽桥</a></li>
+                        <li><a href="#feature-tab">教皇宫</a></li>
+                        <li><a href="#feature-tab">Christian Etienne</a></li>
+                        <li><a href="#feature-tab">贝斯特韦斯特拉瓦朗酒店</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/xiaozhen.jpg" alt="1 slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>阿维尼翁</h1>
+
+                    <p>阿维尼翁是法国东南部城市，沃克吕兹省首府。在罗讷河畔，南距迪朗斯河和罗讷河汇合处4公里。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="#"
+                          role="button" target="_blank">点击了解</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/qiao.jpg" alt="2 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>圣贝内泽桥</h1>
+
+                    <p>圣贝内泽桥（Pont St-Bénézet），又叫阿维尼翁桥（Pont d'Avignon），是法国南部著名桥梁，建于1177年，传说一位叫做贝内泽的年轻牧人听到圣音的指示，经由天使的带领，花费了8年的光阴建造了这条桥。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="#" target="_blank"
+                          role="button">点击了解</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/shenmuda.jpg" alt="3 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>教皇宫</h1>
+
+                    <p>教皇宫矗立在法国南方小城阿维尼翁古城池顶，教皇宫由教宗本笃十二世及克里蒙六世下令兴建，是中世纪最宏伟的城堡之一。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="#" target="_blank"
+                          role="button">点击了解</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/food.jpg" alt="4 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Christian Etienne</h1>
+
+                    <p>Christian Etienne以传统的法国料理模式展现在客人面前，在当地非常有名。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="#" target="_blank"
+                          role="button">点击了解</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/jiudian.png" alt="5 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>贝斯特韦斯特拉瓦朗酒店</h1>
+
+                    <p>贝斯特韦斯特拉瓦朗酒店位于阿维尼翁，是家3星级酒店。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="#" target="_blank"
+                          role="button">点击了解</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!-- 主要内容 -->
+<div class="container summary">
+    <!-- 简介 -->
+    <div class="row" id="summary-container">
+        <div class="col-md-6 center">
+            <img class="img-circle" src="img/qiao1.jpg">
+
+            <h2>圣贝内泽桥</h2>
+
+            <p>圣贝内泽桥（Pont St-Bénézet），又叫阿维尼翁桥（Pont d'Avignon），是法国南部著名桥梁，建于1177年，传说一位叫做贝内泽的年轻牧人听到圣音的指示，经由天使的带领，花费了8年的光阴建造了这条桥。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点击了解</a></p>
+        </div>
+        <div class="col-md-6 center">
+            <img class="img-circle" src="img/jiaohuang.jpg" >
+
+            <h2>教皇宫</h2>
+
+            <p>教皇宫矗立在法国南方小城阿维尼翁古城池顶，教皇宫由教宗本笃十二世及克里蒙六世下令兴建，是中世纪最宏伟的城堡之一。</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点击了解</a></p>
+        </div>
+    </div>
+    <!-- 特性 -->
+    <hr class="feature-divider">
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">阿维尼翁</a></li>
+        <li><a href="#tab-firefox" role="tab" data-toggle="tab">圣贝内泽桥</a></li>
+        <li><a href="#tab-safari" role="tab" data-toggle="tab">教皇宫</a></li>
+        <li><a href="#tab-opera" role="tab" data-toggle="tab">Christian Etienne</a></li>
+        <li><a href="#tab-ie" role="tab" data-toggle="tab">贝斯特韦斯特拉瓦朗酒店</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-chrome">
+            <div class="row feature">
+                <div class="col-md-7">
+                    <h2 class="feature-heading">阿维尼翁<span
+                            class="text-muted">世界文化遗产</span></h2>
+                    <p class="lead">阿维尼翁（法语：Avignon）位于法国南部，是14世纪罗马教皇的居所。由西蒙德·马蒂尼和马泰奥·焦瓦内蒂
+                        设计装饰的罗马教皇宫，看上去非常古朴。它俯视着这座城市，环城的城墙和12世纪遗留下来的横跨罗讷河的桥梁。在这座哥特式建筑
+                        下面的广场上，小宫殿和圣母院教士的罗马主教堂构成了一组特殊的纪念碑，突显阿维尼翁在14世纪基督教化的欧洲所扮演的突出角色。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/awei.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-firefox">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/qiao1.jpg">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="feature-heading">圣贝内泽桥<span class="text-muted">阿维尼翁断桥</span>
+                    </h2>
+                    <p class="lead">阿维尼翁还有一处有名的古迹———贝内泽桥。传说，800多年以前，15岁的牧羊少年贝内泽受到神
+                        灵启示，决定在罗纳河上建一座桥。他独自将一块十几个人都抬不动的巨石搬到河边，确定了建桥的位置。当地民众在他的
+                        率领下，历时8年，终于将大桥建成。在很长的时间里，这座桥是罗纳河下游唯一的桥，通过它往来于西班牙与意大利之间的朝圣者
+                        及商务人士无不感到欣喜。大桥本来长900多米，有22个拱孔，是欧洲中世纪建筑的杰作。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-safari">
+            <div class="row feature">
+                <div class="col-md-7">
+                    <h2 class="feature-heading">教皇宫 <span class="text-muted">中世纪最宏伟的城堡之一</span></h2>
+                    <p class="lead">教皇宫（Palais des Papes）坐落在罗纳河畔，是一座城堡式的建筑，始建于1334年，占
+                        地约1.5万平方米；先后有7位教皇在此居住。教皇宫分旧殿和新殿两部分。旧殿朴实无华，属罗马建筑风格
+                        ；新殿富丽堂皇，为典型的哥特式建筑。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/jiaohuang.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-opera">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/din.jpg"
+                         alt="Opera">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Christian Etienne <span class="text-muted">米其林一星餐厅</span>
+                    </h2>
+
+                    <p class="lead">Christiane Eienne以传统的法国料理模式展现在客人的面前，在当地非常有名。Christiane E
+                        ienne擅长采用当地新鲜的食材来创造口感丰富的佳肴，每一道佳肴D都源于厨师的精心制作，在这里甜点、葡萄
+                        酒和主菜,制作都很完美，由不同的服务生为你展现其专业的服务，经营者即为ChrisLiane Eienne的主厨甚至会在
+                        用餐时，走出来向每一桌客人询问"是否合您的胃口"，并热情地与客人话家常。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-ie">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">贝斯特韦斯特拉瓦朗酒店<span class="text-muted">三星级酒店</span></h2>
+
+                    <p class="lead">Best Western Hôtel酒店提供带免费Wi-Fi的舒适空调客房以及带2个特斯拉充电点的安全封闭式停车场，可应要求提供自行车出租服务和保姆服务。
+                        酒店的花园栽种了橄榄树和法国梧桐树，设有室外私人游泳池。酒店在餐厅、天井或花园供应普罗旺斯风味的早餐和其他餐点。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="img/jiudian1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 关于 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>阿维尼翁是法国东南部城市，沃克吕兹省首府。在罗讷河畔，南距迪朗斯河和罗讷河汇合处4公里。人口90194（2011）。水果、蔬菜和葡萄酒市场。有食品、化学、冶金、精密机械、纺织、造纸等工业。市内有宫殿、教堂等，还有建于十二世纪的阿维尼翁桥。旅游业颇发达。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+        <p>&copy; 201658234041胡瑞 </p>
+    </footer>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

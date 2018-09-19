@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        body{
+            font-family: "Microsoft Yahei",sans-serif;
+        }
+        .mai-icon{
+            background: rgb(64,210,177);
+            color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 20px;
+        }
+        /*导航*/
+        .navbar-default{
+            border-top-color: #fff;
+            border: none;
+            box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25);
+        }
+        .navbar-default .navbar-brand{
+            font-size: 30px;
+            font-weight: bold;
+            color: #40b2d1;
+            height: 70px;
+            line-height: 35px;
+        }
+        .navbar-default .navbar-nav>li>a{
+            font-size: 16px;
+            font-weight: bold;
+            color: #666;
+            height: 70px;
+            line-height: 35px;
+        }
+        .navbar-toggle{
+            margin-top: 17px;
+        }
+        .navbar-default .navbar-toggle:hover{
+            border-color: #40d2b1;
+            border-top-color: rgba(69,210,184);
+        }
+        .navbar-default .navbar-toggle .icon-bar{
+            border-top-color: #1c99b2;
+        }
+        /*home*/
+        #home{
+            margin-top: 70px;
+            background: url("img/flower.jpg");
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            height: 500%;
+        }
+        .lvjing{
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+        }
+        #home h1{
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+        #home p{
+            font-weight: 400;
+            line-height: 35px;
+        }
+        #home{
+            margin-top: 75px;
+            display: inline-block;
+        }
+        /*bbs*/
+        #bbs{padding: 80px;
+            text-align: center;
+        }
+        #bbs .col-md-4{
+            padding: 15px;
+        }
+        #bbs .col-md-4:hover{
+            background: #f1f1f1;
+            box-shadow: 1px 1px 4px #ccc;
+        }
+        #bbs a{
+            color: #212121;
+            text-decoration: none;
+        }
+        #bbs img{
+            margin:  0 auto;
+        }
+        #bbs h3{
+            font-weight: bold;
+        }
+        /*html5*/
+        #html5{
+            background: #f8f8f8;
+            padding: 80px 0;
+        }
+        #html5 h2{
+            font-weight: bold;
+        }#html5 p{
+            line-height: 40px;
+                 }
+        #html5-1{
+            background: #f8f8f8;
+            padding: 80px 0;
+        }
+        #html5-1 h2{
+            font-weight: bold;
+        }#html5-1 p{
+             line-height: 40px;
+         }
+        #html5-load{
+            background: #f8f8f8;
+            padding: 80px 0;
+        }
+        #html5-load h2{
+            font-weight: bold;
+        }#html5-load p{
+             line-height: 40px;
+         }
+        /*contact*/
+        #contact{
+            background: url("img/map.jpg") no-repeat;
+            background-size: cover;
+            color: #fff;
+            height: 500px;
+        }
+        #contact h2{
+            font-weight: bold;
+            margin-bottom: 25px;
+            margin-top: 0;
+        }
+        #contact p{
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+        #contact .form-control{
+            border: none;
+            border-radius: 0;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        #contact textarea.form-control{
+            height: auto;
+        }
+        #contact input[type=submit]{
+            background: #40d2b1;
+            color: #fff;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        #contact input[type=submit]:hover{
+            background: #40d2b1;
+        }
+
+    </style>
+</head>
+
+<body>
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--小屏幕导航按钮和logo-->
+        <button class="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="home.html" class="navbar-brand navbar-left">首页</a>
+
+    <!--导航-->
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">景点</a></li>
+            <li><a href="#bbs">美食</a></li>
+            <li><a href="#html5">购物</a></li>
+            <li><a href="#new">活动</a></li>
+            <li><a href="#contact">个人</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<!--home-->
+<section id="home">
+    <div class="lvjing"id="top">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1s">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>人间太吵，来我心里可好？</h1>
+                    <p>阿维尼翁并不是普罗旺斯最大的城市，但却堪称是最精典的普罗旺斯。你能想象到的薰衣草田，葡萄美酒，琳琅美食，半山小村，风土人情，或者脑海中浪漫景象之种种，在以阿维尼翁为中心的这一带都可以找到。清晨，在阿维尼翁的阳光中醒来，前往附近的吕贝隆（The Luberon）地区， 车子行进在吕贝隆蜿蜒的公路上，绿色的葡萄园，金黄色的麦田，这瑰丽壮阔的大地诗篇中，紫色的薰衣草田，成为最动人的一笔。</p>
+                    <img src="img/w10801.jpg" class="img-responsive text-center">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--bbs-->
+<section id="bbs">
+    <div class="container">
+        <div class="row wow fadeInUp">
+            <div class="col-md-4">
+                <a href="#">
+                <img src="img/makalong.jpg">
+                <h3>马卡龙</h3>
+                <p>马卡龙，又称作玛卡龙、法式小圆饼，是一种用蛋白、杏仁粉、白砂糖和糖霜制作，并夹有水果酱或奶油的法式甜点。口感丰富，外脆内柔，外观五彩缤纷，精致小巧。</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="img/bulei.jpg">
+                    <h3>奶油布蕾</h3>
+                    <p>法西餐甜品─法式烤布蕾式Crèmebrulée是一种法国传统的点心，外面是脆焦糖外壳，里面是奶油布丁似的冰凉软馅。</p>
+                </a>
+            </div>  <div class="col-md-4">
+            <a href="#">
+                <img src="img/egan.jpg">
+                <h3>煎鹅肝</h3>
+                <p>煎鹅肝时最适合搭配甜酒煮成的酱汁，或加入无花果干一起煎，这样的话鹅肝的香味便能和无花果的风味配合一起，吃起来别有一番滋味。  </p>
+            </a>
+        </div>
+        </div>
+    </div>
+</section>
+<!--html5-->
+<section id="html5">
+    <div class="container">
+        <div class="col-md-6 wow fadeInLeft">
+            <h2>精油</h2>
+            <p>精油是从植物的花、叶、茎、根或果实中，通过水蒸气蒸馏法、挤压法、冷浸法或溶剂提取法提炼萃取的挥发性芳香物质。普罗旺斯省的植物精华，地中海边的天然萃取，大西洋深海底的原生态巨藻。国宝级的无污染的原料栖生地，第一时间的新鲜采摘，配合各种珍贵植物精华，运用当今最先进的提炼技术，使得普罗旺斯的精油将其天然的护肤活性发挥至极致。</p>
+            <p><button class="btn btn-default btn-success"><span class="glyphicon glyphicon-euro mai-icon"></span>购买</button></p>
+            <p><button class="btn btn-default btn-success"><span class="glyphicon glyphicon-shopping-cart mai-icon " ></span>加入购物车</button></p>
+        </div>
+        <div class="col-md-6 wow fadeInRight" ><img src="img/jingyou.jpg" class="img-responsive"></div>
+    </div>
+</section>
+<section id="html5-1">
+    <div class="container wow fadeInUp">
+
+        <div class="col-md-6"><img src="img/fengmi.jpg" class="img-responsive"></div>
+        <div class="col-md-6">
+            <h2>薰衣草蜂蜜</h2>
+            <p>薰衣草蜂蜜能平衡油脂分泌、抑油，更能清洁肌肤、缩小毛细孔，让皮肤更加细腻；可抑制粉刺，褪暗疮印，促进青春痘和刀伤烫伤等伤口迅速愈合，能极为有效地避免留下疤痕；能改善身体各部位的瘙痒，如对皮肤及外阴等处的骚痒有缓解效果并保证不损伤肌肤侵害肌理；能有效的防治蚊虫叮咬；调理皮肤，适用于混合性、油性肌肤，一般或敏感性肤质也可使用。</p>
+            <p><button class="btn btn-default btn-success"><span class="glyphicon glyphicon-euro mai-icon"></span>购买</button></p>
+            <p><button class="btn btn-default btn-success"><span class="glyphicon glyphicon-shopping-cart mai-icon " ></span>加入购物车</button></p>
+        </div>
+    </div>
+</section>
+<section id="new">
+    <div class="container wow fadeIn" data-wow-duration="1s">
+        <div class="row">
+            <h1>最新活动</h1>
+            <div class="col-md-3">
+                <div class="thumbnail text-center" style="margin: 10px">
+                    <img src="img/yishujie.jpg">
+                    <button class="btn btn-default" style="border: solid 1px lightgreen;color: lightgreen;padding: 10px;margin: 20px" >阿维尼翁戏剧节</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail text-center" style="margin: 10px">
+                    <img src="img/city.jpg">
+                    <button class="btn btn-default" style="border: solid 1px lightgreen;color: lightgreen;padding: 10px;margin: 20px" >阿维尼翁城墙</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail text-center" style="margin: 10px">
+                    <img src="img/angladon.jpg">
+                    <button class="btn btn-default" style="border: solid 1px lightgreen;color: lightgreen;padding: 10px;margin: 20px" >安哥拉东博物馆</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail text-center" style="margin: 10px">
+                    <img src="img/lambert.jpg">
+                    <button class="btn btn-default" style="border: solid 1px lightgreen;color: lightgreen;padding: 10px;margin: 20px" >兰伯特收藏馆</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail text-center" style="margin: 10px">
+                    <img src="img/luminess.jpg">
+                    <button class="btn btn-default" style="border: solid 1px lightgreen;color: lightgreen;padding: 10px;margin: 20px" >发光的阿维尼翁</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail text-center" style="margin: 10px">
+                    <img src="img/sonlu.jpg">
+                    <button class="btn btn-default" style="border: solid 1px lightgreen;color: lightgreen;padding: 10px;margin: 20px" >松露节</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail text-center" style="margin: 10px">
+                    <img src="img/opera.jpg">
+                    <button class="btn btn-default" style="border: solid 1px lightgreen;color: lightgreen;padding: 10px;margin: 20px" >Opera cafe</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail text-center" style="margin: 10px">
+                    <img src="img/mirande.jpg">
+                    <button class="btn btn-default" style="border: solid 1px lightgreen;color: lightgreen;padding: 10px;margin: 20px" >La Mirand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="html5-load ">
+    <div class="container wow fadeInUp">
+        <div class="col-md-6" style="padding-top: 50px">
+            <h2>阿维尼翁旅行APP下载</h2>
+            <p>L'office de Tourisme passe à l'heure d'été ! A partir du samedi 26 mars, accueil du lundi au samedi de 9h à 18h, les dimanches et jours fériés de 10h à 17h.</p>
+            <p><button class="btn-default btn-success btn"><span class="glyphicon glyphicon-download"></span>Android版</button> <button class="btn-default btn-success btn"><span class="glyphicon glyphicon-download"></span>iPhone版</button>  </p>
+        </div>
+        <div class="col-md-6"><img src="img/w1080%20(20).jpg" class="img-responsive"></div>
+    </div>
+</section>
+<section id="contact">
+    <div class="lvjing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft" style="margin-top: 50px">
+                    <h2><span class="glyphicon glyphicon-send"></span>联系free</h2>
+                    <p>Sur ce site, vous avez la possibilité d'acheter tout au long de l'année les produits dérivés du Festival : affiches, T-shirts et autres objets à s'offrir ou à offrir. Ces produits sont également disponibles, de septembre à juin au bureau du Festival d'Avignon, Cloître Saint-Louis à Avignon, et, en juillet, à la Boutique du Festival, place de l'Horloge.</p>
+                    <address>
+                        <p>地址：重庆市永川区红河大道319号</p>
+                        <p><span class="glyphicon glyphicon-phone-alt">
+                        </span>联系电话：40404040</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span>
+                        邮箱：1103432714@qq.com</p>
+                    </address>
+                </div>
+                <div class="col-md-6 wow fadeInRight" style="margin-top: 50px">
+                    <form action="#" method="post">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="email">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="title">
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" placeholder="content"></textarea>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="submit" class="form-control" value="提交">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p class="text-center">201658234041&copy;胡瑞</p>
+</footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    $(function () {
+        $('.nav').singlePageNav({
+            offset:70
+        });
+        $('.navbar-collapse').click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        new WOW().init();
+    })
+</script>
+</body>
+</html>
